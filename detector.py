@@ -60,14 +60,16 @@ for age_ in age_needed:
         break
     i+=1
 for feature_ in feature_needed:
-    entered=input(f"{feature_} \n:   ")
+    
     if feature_=='GENDER':
+        entered=input(f"{feature_} (m for male / f for female)\n:   ")
         if entered=='m':
             input_feature[f]=1
         elif entered=='f':
             input_feature[f]=0
 
     else:
+        entered=input(f"{feature_} (y for yes / n for no)\n:   ")
 
         if entered=='y':
             input_feature[f]=1
