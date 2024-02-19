@@ -1,9 +1,9 @@
 import pandas as pd
 from sklearn.ensemble import RandomForestClassifier
-from sklearn.model_selection import train_test_split
-from icecream import ic
+
+
 import numpy as np
-import matplotlib.pyplot as mlt
+
 data=pd.read_csv("survey lung cancer.csv")
 
 show_d=pd.read_csv("survey lung cancer.csv")
@@ -47,10 +47,7 @@ feature_needed=[ 'GENDER','SMOKING',
                 'WHEEZING','ALCOHOL CONSUMING',
                 'COUGHING', 'SHORTNESS OF BREATH',
                 'SWALLOWING DIFFICULTY', 'CHEST PAIN',]
-mlt.scatter(show_d['SMOKING'].values,label)
-mlt.ylabel("cancer")
-mlt.xlabel("feature")
-mlt.show()
+
 a=int(input("age  (in digit)\n:  "))
 features_name=data.columns
 i=0
